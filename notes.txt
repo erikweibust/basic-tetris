@@ -1,0 +1,17 @@
+Learning JavaScript by Building a Basic Tetris Game
+by Ania Kubow
+https://www.youtube.com/watch?v=rAUn1Lom6dw
+
+During the intro she was quick to offer help in YouTube comments or Twitter
+
+Intro:
+Setup IDE
+   - she uses Atom and installs Shell Command
+   - show invisibles, show indent guide, use soft tabs
+   - she downloaded and installed a number of extensions around 5:00 mark
+   - linter-js-standard
+
+Initial Code:
+app.js:
+
+The DOMContentLoaded event fires when the initial html document has been completely loaded and parsed; this is without waiting for the css, images, etc.
