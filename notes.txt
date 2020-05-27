@@ -15,3 +15,9 @@ Initial Code:
 app.js:
 
 The DOMContentLoaded event fires when the initial html document has been completely loaded and parsed; this is without waiting for the css, images, etc.
+
+Showed Google Sheet with mock-up of page.
+- 20x10 grid
+- need 200 divs
+- could have used a for loop in js to build.
+
