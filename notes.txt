@@ -72,3 +72,9 @@ let names = [ 'Erik', 'Ania', 'Dave' ]
 names.forEach( name => {
    console.log(name + ' is the best')
 })
+
+
+Drawing Tetrominoes using classList.add():
+Math.random()
+.length // how long array is
+Math.floor() // round down to nearest integer

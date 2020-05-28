@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
       [width, width*2, width*2+1, width*2+2]
    ]
 
-   const sTetromino = [
+   const zTetromino = [
       [width+1, width+2, width*2, width*2+1],
       [0, width, width+1, width*2+1],
       [width+1, width+2, width*2, width*2+1],
@@ -27,17 +27,47 @@ document.addEventListener('DOMContentLoaded', () => {
       [1, width, width+1, width*2+1]
    ]
 
-   const boxTetromino = [
+   const oTetromino = [
       [0, 1, width, width+1],
       [0, 1, width, width+1],
       [0, 1, width, width+1],
       [0, 1, width, width+1]
    ]
 
-   const lineTetromino = [
+   const iTetromino = [
       [1, width+1, width*2+1, width*3+1],
       [width, width+1, width+2, width+3],
       [1, width+1, width*2+1, width*3+1],
       [width, width+1, width+2, width+3]
    ]
+
+   const theTetrominoes = [lTetromino, zTetromino, tTetromino, oTetromino, iTetromino]
+
+   // draw tetromino in (0,4)
+   let currentPosition = 4
+   let currentRotation = 0
+
+
+   // randomly select a tetromino and it's rotation
+   let random = Math.floor(Math.random()*theTetrominoes.length)
+   //console.log(random) // log the random number
+   let current = theTetrominoes[random][currentRotation]
+
+   //console.log(theTetrominoes[0][0]) // log the output of our first tet first rotation
+
+   // draw the Tetromino
+   function draw() {
+      current.forEach(index => {
+         squares[currentPosition + index].classList.add('tetromino')
+      })
+   }
+
+   // undraw the Tetromino
+   function undraw() {
+      current.forEach(index => {
+         squares[currentPosition + index].classList.remove('tetromino')
+      })
+   }
+
+   draw()
 })
