@@ -11,6 +11,7 @@ Setup IDE
    - she downloaded and installed a number of extensions around 5:00 mark
    - linter-js-standard
 
+
 Initial Code:
 app.js:
 
@@ -26,3 +27,48 @@ CSS Section:
 
 by default divs stack up down the page
 - to get them to fill our yellow outter div we need to use flex-bots (sp?)
+
+
+Explaning variables:
+variables have global or local scope
+
+const and let
+ 
+let vs var
+let allows you to declare vars with a block scope
+
+var - function + global scoped
+let - block scoped
+const - block scoped constant
+
+
+Working with Arrays:
+store lists of data
+each element has an index
+first index is 0; last is array.length-1
+
+
+Arrow Functions and forEach:
+- new in es6
+
+old way:
+hello = function () {
+   return 'Hello World'
+}
+
+new way:
+hello = () => 'Hello World'
+hello = (val) => 'Hello World' + val
+hello = val => 'Hello World' + val
+
+itemArray.forEach( item => item + 2)
+
+forEach Call Back:
+.forEach( value, index, object )
+
+Example:
+let names = [ 'Erik', 'Ania', 'Dave' ]
+
+names.forEach( name => {
+   console.log(name + ' is the best')
+})
