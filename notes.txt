@@ -21,3 +21,8 @@ Showed Google Sheet with mock-up of page.
 - need 200 divs
 - could have used a for loop in js to build.
 
+
+CSS Section:
+
+by default divs stack up down the page
+- to get them to fill our yellow outter div we need to use flex-bots (sp?)

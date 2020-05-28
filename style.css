@@ -1,1 +1,22 @@
 /* add styles here */
+
+/* we want our squares to be 20x20px
+   a 10x20 grid (10 squares wide x 20 squares tall)
+
+*/
+
+/* style only the element with id=grid */
+.grid {
+   width: 200px;
+   height: 400px;
+   display: flex;
+   flex-wrap: wrap;
+   background-color: yellow;
+}
+
+/* all divs in the element .grid */
+.grid div {
+   height: 20px;
+   width: 20px;
+   background-color: red;
+}
