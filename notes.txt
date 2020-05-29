@@ -78,3 +78,19 @@ Drawing Tetrominoes using classList.add():
 Math.random()
 .length // how long array is
 Math.floor() // round down to nearest integer
+
+
+Times and Intervals:
+Covered the interval concept
+if/else if/else
+
+New one for me:
+itemArray.some(false, true, false) // looking for a true element in array
+
+
+Using Modules to define our place on the grid:
+just wrote code
+
+
+Keycodes and events:
+Keycodes.info // website with all keyboard event codes
