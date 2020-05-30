@@ -94,3 +94,10 @@ just wrote code
 
 Keycodes and events:
 Keycodes.info // website with all keyboard event codes
+
+
+Choosing Items from Arrays:
+easy
+
+
+Displaying the "next up" tetromino:
