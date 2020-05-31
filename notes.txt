@@ -93,7 +93,7 @@ just wrote code
 
 
 Keycodes and events:
-Keycodes.info // website with all keyboard event codes
+Keycode.info // website with all keyboard event codes
 
 
 Choosing Items from Arrays:
@@ -101,3 +101,23 @@ easy
 
 
 Displaying the "next up" tetromino:
+
+
+
+Adding a start and pause game function:
+This lesson was where we added logic to the start button to run the game
+
+
+Splice():
+Used to remove, replace or add items to arrays
+It mutates the array
+
+itemArray.splice( startIndex, deleteCount )
+itemArray.splice( startIndex, 0 ) // with a deleteCount of 0, nothing gets deleted
+
+itemArray.splice( startIndex ) // removes everything after index
+
+all calls to splice return what was spiced *and* modify the array
+
+
+Splice(), concat(), and appendChild():
