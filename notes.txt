@@ -121,3 +121,4 @@ all calls to splice return what was spiced *and* modify the array
 
 
 Splice(), concat(), and appendChild():
+concat: merge 2 arrays togeter
