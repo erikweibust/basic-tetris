@@ -51,7 +51,6 @@ document.addEventListener('DOMContentLoaded', () => {
    let currentPosition = 4
    let currentRotation = 0
 
-
    // randomly select a tetromino and it's rotation
    let random = Math.floor(Math.random()*theTetrominoes.length)
    //console.log(random) // log the random number
@@ -106,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
          current.forEach(index => squares[currentPosition + index].classList.add('taken'))
          // start a new tetromino falling
          random = nextRandom
-         random = Math.floor(Math.random() * theTetrominoes.length)
+         nextRandom = Math.floor(Math.random() * theTetrominoes.length)
          current = theTetrominoes[random][currentRotation]
          currentPosition = 4
          draw()
@@ -156,7 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
       draw()
    }
 
-   // show up-next tetromino in mini-grid display
+   // show next-up tetromino in mini-grid display
    const displaySquares = document.querySelectorAll('.mini-grid div')
    const displayWidth = 4
    const displayIndex = 0
