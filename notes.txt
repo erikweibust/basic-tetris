@@ -126,3 +126,18 @@ concat: merge 2 arrays togeter
 
 Game over using some() and innerHTML:
 write the gameOver()
+
+
+Assigning colors to our Tetrominoes:
+
+
+Contact Ania Kubow if need help or to show off project
+@ania_kubow
+Ania Kubow - YouTube
+
+
+Todo:
+different color for each tetro - bonus lesson
+clean up code
+- reduce duplication
+- commented out code
