@@ -43,6 +43,10 @@
    width: 20px;
 }
 
+#start-button {
+   margin-bottom: 20px;
+}
+
 /*
 body {
    background-color: cornsilk;
