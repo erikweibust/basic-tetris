@@ -171,9 +171,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
    startBtn.addEventListener('click', () => {
       if (timerId) {
+         console.log("in if: clicked start")
+         startBtn.innerHTML = 'Restart Game'
          clearInterval(timerId)
          timerId = null
       } else {
+         console.log("in else: clicked start")
+         startBtn.innerHTML = 'Pause Game'
          draw()
          timerId = setInterval(moveDown, 1000)
          nextRandom = Math.floor(Math.random()*theTetrominoes.length)
@@ -206,6 +210,7 @@ document.addEventListener('DOMContentLoaded', () => {
       function gameOver() {
          if (current.some(index => squares[currentPosition + index].classList.contains("taken"))) {
             scoreDisplay.innerHTML = 'end'
+            startBtn.innerHTML = 'New Game'
             clearInterval(timerId)
          }
       }
