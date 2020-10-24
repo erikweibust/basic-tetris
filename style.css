@@ -46,3 +46,8 @@
 #start-button {
    margin-bottom: 20px;
 }
+
+#p-score {
+   font-weight: bolder;
+   font-size: large;
+}
