@@ -184,23 +184,34 @@ document.addEventListener('DOMContentLoaded', () => {
    })
 
    function addScore() {
+      let outerRows = 0;
+
       for (let i = 0; i < 199; i += width) {
          const row = [i, i+1, i+2, i+3, i+4, i+5, i+6, i+7, i+8, i+9]
-         
+
          if (row.every(index => squares[index].classList.contains('taken'))) {
-            score += 10
-            scoreDisplay.innerHTML = score
+
             row.forEach( index => {
                squares[index].classList.remove('taken')
                squares[index].classList.remove('tetromino')
                squares[index].style.backgroundColor = ''
-
             })
+            
+            outerRows++;
+            console.log("outerRows: " + outerRows);
+
+            score += 10;
+            scoreDisplay.innerHTML = score;
+
             const squaresRemoved = squares.splice(i, width)
 
             squares = squaresRemoved.concat(squares)
             squares.forEach(cell => grid.appendChild(cell))
-               
+            }
+
+            if ( outerRows == 4) {
+               score += 360;
+               scoreDisplay.innerHTML = score;
             }
          }
       }
