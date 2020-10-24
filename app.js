@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
    const grid = document.querySelector('.grid')
    let squares = Array.from(document.querySelectorAll('.grid div'))
+   const h3score = document.querySelector('#h3-score')
    const scoreDisplay = document.querySelector('#score')
    const startBtn = document.querySelector('#start-button')
    const width = 10
@@ -218,7 +219,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
       function gameOver() {
          if (current.some(index => squares[currentPosition + index].classList.contains("taken"))) {
-            scoreDisplay.innerHTML = 'end'
+            h3score.innerHTML = 'Final Score: '
+            h3score.style.color = 'red'
+            scoreDisplay.style.color = 'red'
+            //scoreDisplay.innerHTML = score + 'end';
             startBtn.innerHTML = 'New Game'
             clearInterval(timerId)
          }
