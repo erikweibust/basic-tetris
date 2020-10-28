@@ -68,8 +68,6 @@ document.addEventListener('DOMContentLoaded', () => {
       })
    }
 
-   //timerId = setInterval(moveDown, 1000) // call moveDown() every 1000ms, or 1sec
-
    function control(e) {
       if (e.keyCode === 37) {
          moveLeft()
@@ -79,6 +77,8 @@ document.addEventListener('DOMContentLoaded', () => {
          moveRight()
       } else if (e.keyCode === 40) {
          moveDown()
+      } else if (e.keyCode == 32) {
+         // spacebar
       }
    }
 
@@ -199,7 +199,6 @@ document.addEventListener('DOMContentLoaded', () => {
             })
             
             outerRows++;
-            console.log("outerRows: " + outerRows);
 
             score += 10;
             scoreDisplay.innerHTML = score;
@@ -222,7 +221,6 @@ document.addEventListener('DOMContentLoaded', () => {
             h3score.innerHTML = 'Final Score: '
             h3score.style.color = 'red'
             scoreDisplay.style.color = 'red'
-            //scoreDisplay.innerHTML = score + 'end';
             startBtn.innerHTML = 'New Game'
             clearInterval(timerId)
          }
