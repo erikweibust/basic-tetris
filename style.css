@@ -16,6 +16,7 @@
    display: flex;
    flex-wrap: wrap;
    background-color: aliceblue;
+   border: solid;
 }
 
 /* all divs in the element .grid */
@@ -36,6 +37,7 @@
    display: flex;
    flex-wrap: wrap;
    background-color: aliceblue;
+   border: solid;
 }
 
 .mini-grid div {
